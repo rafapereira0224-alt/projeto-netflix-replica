@@ -1,16 +1,52 @@
-# React + Vite
+# Projeto Netflix Replica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma réplica da página inicial da Netflix, desenvolvido com o objetivo de praticar o desenvolvimento front-end com **React** e **Vite**. O foco foi recriar a interface, a responsividade e a experiência do usuário de forma fiel à plataforma original.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias utilizadas
+- **React** (Biblioteca principal)
+- **Vite** (Ambiente de desenvolvimento)
+- **CSS3** (Estilização modular)
+- **Git/GitHub** (Versionamento)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💡 Funcionalidades
+- **Layout Responsivo:** Adaptação fiel à interface original.
+- **Seletor de Idiomas:** Troca dinâmica de conteúdo conforme a seleção do usuário.
+- **Validação de Formulários:** Sistema de verificação de e-mail integrado.
+- **Player de Trailers:** Integração com a API do YouTube para exibição de trailers.
+- **Modal de Destaque:** Exibição interativa de conteúdos.
 
-## React Compiler
+## 🛠️ Como rodar o projeto localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/SEU-USUARIO/nome-do-seu-repositorio.git](https://github.com/SEU-USUARIO/nome-do-seu-repositorio.git)
 
-## Expanding the ESLint configuration
+   Entre na pasta:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Projeto Netflix Replica
+
+Este projeto é uma réplica da página inicial da Netflix, desenvolvido com o objetivo de praticar o desenvolvimento front-end com **React** e **Vite**. O foco foi recriar a interface, a responsividade e a experiência do usuário de forma fiel à plataforma original.
+
+## 🚀 Tecnologias utilizadas
+- **React** - **Vite** - **CSS3** ## 💡 Funcionalidades
+- **Layout Responsivo:** Interface fiel ao original.
+- **Seletor de Idiomas:** Troca dinâmica de conteúdo.
+- **Validação de Formulários:** Verificação de e-mail integrada.
+- **Player de Trailers:** Integração com a API do YouTube.
+
+## 🛠️ Como rodar o projeto localmente
+
+1. Clone o repositório:
+   `git clone https://github.com/SEU-USUARIO/nome-do-seu-repositorio.git`
+
+2. Entre na pasta:
+   `cd nome-do-seu-repositorio`
+
+3. Instale as dependências:
+   `npm install`
+
+4. Inicie o servidor:
+   `npm run dev`
+
+## 📝 Autor
+Desenvolvido por **[Rafael]**.
