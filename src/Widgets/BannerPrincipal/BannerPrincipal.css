@@ -1,0 +1,163 @@
+.banner-principal-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.banner-grid-imagens {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/netflix_grid.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.banner-camada-escura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.4) 0%, 
+        rgba(0, 0, 0, 0.7) 70%,
+        rgba(0, 0, 0, 0.95) 100% 
+    );
+    z-index: 2;
+}
+
+
+.banner-curva-base {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%; 
+    height: 90px; 
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0; 
+    z-index: 5;
+    overflow: hidden;
+    background: linear-gradient(
+        to right, 
+        #E5097F 0%, 
+        #E50914 45%, 
+        #E50914 55%, 
+        #E5097F 100% 
+    );
+    padding-top: 4px; 
+    border: none;
+}
+
+.banner-curva-base::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0; 
+    background: 
+        radial-gradient(ellipse at 50% 0%, rgba(0, 43, 102, 0.75) 0%, transparent 65%),
+        linear-gradient(to top, #000000 20%, rgba(0, 0, 0, 0.9) 100%);
+    background-blend-mode: screen; 
+}
+
+.banner-conteudo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    max-width: 700px; 
+    padding: 0 20px; 
+}
+
+.banner-titulo {
+    font-size: 56px; 
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    margin: 0px 0px 8px; 
+    letter-spacing: -0.5px;
+    line-height: 1.2; 
+}
+
+.banner-subtitulo {
+    font-size: 1.25rem;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 700; 
+    margin-bottom: 24px; 
+    color: #ffffff;
+}
+
+.banner-chamada-email {
+    font-size: 1.1rem; 
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500; 
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+    color: #ffffff; 
+    line-height: 1.5;
+}
+
+.banner-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.banner-input-email {
+    flex: 1; 
+    padding: 16px;
+    font-size: 1rem;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", sans-serif;
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #ffffff;
+    border: 1px solid rgba(128, 128, 128, 0.7); 
+    border-radius: 4px; 
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.banner-input-email:focus {
+    border-color: #ffffff;
+}
+
+.banner-botao-vamos-la {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #E50914; 
+    color: #ffffff;
+    font-size: 1.5rem; 
+    font-weight: 700;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", sans-serif;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.banner-botao-vamos-la:hover {
+    background-color: #c10712;
+}
+
+.banner-icone-seta {
+    width: 24px;
+    height: 24px;
+}

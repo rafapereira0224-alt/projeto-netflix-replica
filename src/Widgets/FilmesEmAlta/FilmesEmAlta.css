@@ -1,0 +1,61 @@
+.titulo-secao {
+    font-size: 1.5rem;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700; 
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-left: 50px; 
+}
+
+.filmes-em-alta-container {
+    padding: 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lista-filmes {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+.card-filme {
+    width: 202px;
+    height: 270px;
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 8px; 
+    overflow: visible; 
+    cursor: pointer;
+}
+
+.card-filme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block; 
+}
+
+.numero-grande {
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+    font-size: 110px;
+    font-weight: 900;
+    color: black; 
+    -webkit-text-stroke: 1px white;
+    z-index: 99; 
+    pointer-events: none;
+    font-family: 'Netflix Sans', sans-serif;
+}
+
+.card-filme:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.lista-filmes::-webkit-scrollbar {
+    display: none;
+}
